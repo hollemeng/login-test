@@ -1,0 +1,16 @@
+{
+    "dividingLine1": "-----------------test data below--------------------------------------------------",
+    "loginGood":{
+      "name": "student",
+      "pwd": "Password123"
+    },
+    "loginBadName":{
+      "name": "stud",
+      "pwd": "Password123"
+    },
+    "loginBadPwd":{
+      "name": "student",
+      "pwd": "BAD"
+    },
+    "dividingLine2": "-----------------selector below--------------------------------------------------"
+}

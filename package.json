@@ -1,0 +1,29 @@
+{
+  "name": "login_test",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cypress:prettier": "npx prettier --write \"cypress/**/*.js\"",
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run",
+    "cypress:prettier-and-run": "npm run cypress:prettier && npm run cypress:run",
+    "cypress:merge-report": "npx mochawesome-merge mochawesome-report/*.json > final-report.json",
+    "cypress:generate-report": "npx mochawesome-report-generator final-report.json",
+    "cypress:final-report": "npm run cypress:merge-report && npm run cypress:generate-report",
+    "cypress:justGO": "npm run cypress:run && npm run cypress:final-report"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^12.17.2",
+    "cypress-iframe": "^1.0.1",
+    "cypress-wait-until": "^2.0.0",
+    "eslint-plugin-cypress": "^2.13.3",
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^4.3.0",
+    "mochawesome-report-generator": "^6.2.0",
+    "prettier": "^3.0.0"
+  }
+}
