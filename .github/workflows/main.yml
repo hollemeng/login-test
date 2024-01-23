@@ -41,3 +41,14 @@ jobs:
         with:
           name: cypress-reports
           path: mochawesome-report
+
+      - name: Setup Pages
+        if: always()
+        uses: actions/configure-pages@v3
+
+      - name: Deploy to GitHub Pages
+        if: always()
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./mochawesome-report        
