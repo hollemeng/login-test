@@ -43,7 +43,7 @@ describe("Login Page Test", function () {
       loginPage.submit();
 
       loginPage.checkInvalidPasswordError();
-      cy.expect(1).to.equal(0)
+      // cy.expect(1).to.equal(0)
     });
 
     cy.log("Well done! See you next time!");
