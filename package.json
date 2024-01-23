@@ -8,8 +8,8 @@
     "cypress:open": "cypress open",
     "cypress:run": "cypress run",
     "cypress:prettier-and-run": "npm run cypress:prettier && npm run cypress:run",
-    "cypress:merge-report": "npx mochawesome-merge mochawesome-report/*.json > final-report.json",
-    "cypress:generate-report": "npx mochawesome-report-generator final-report.json",
+    "cypress:merge-report": "npx mochawesome-merge mochawesome-report/*.json > index.json",
+    "cypress:generate-report": "npx mochawesome-report-generator index.json",
     "cypress:final-report": "npm run cypress:merge-report && npm run cypress:generate-report",
     "cypress:justGO": "npm run cypress:run && npm run cypress:final-report"
   },

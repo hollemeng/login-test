@@ -4,7 +4,6 @@ import loginPage from "../pages/login-page";
 describe("Login Page Test", function () {
   this.beforeEach(() => {
     cy.clearCookies();
-    // TODO: check if this file exists...seems no need at all
     cy.fixture("pccw_loginPage_test.json").then((data) => {
       cy.wrap(data).as("testData");
     });
@@ -44,6 +43,7 @@ describe("Login Page Test", function () {
       loginPage.submit();
 
       loginPage.checkInvalidPasswordError();
+      // cy.expect(1).to.equal(0)
     });
 
     cy.log("Well done! See you next time!");
