@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2024-01-23T07:48:44.823Z",
-    "end": "2024-01-23T07:48:46.944Z",
-    "duration": 2121,
+    "start": "2024-01-23T08:01:15.563Z",
+    "end": "2024-01-23T08:01:17.267Z",
+    "duration": 1704,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "a2877b1f-6708-4c6e-b03d-2553e0500b44",
+      "uuid": "c182b0f5-fdbf-48d9-b829-92d5ccff9ce5",
       "title": "",
       "fullFile": "cypress/e2e/spec.cy.js",
       "file": "cypress/e2e/spec.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "1b7291b3-031f-4c08-96ed-30cc735a3a08",
+          "uuid": "d26ceb83-09d4-4f10-a382-7828e4838ec0",
           "title": "template spec",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "passes",
               "fullTitle": "template spec passes",
               "timedOut": null,
-              "duration": 304,
+              "duration": 284,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "cy.visit(\"https://example.cypress.io\");",
               "err": {},
-              "uuid": "f5afdf99-ce30-4f2f-ac9a-5d27a3aab5be",
-              "parentUUID": "1b7291b3-031f-4c08-96ed-30cc735a3a08",
+              "uuid": "d9612b13-4a5f-499a-8028-712437cd2fca",
+              "parentUUID": "d26ceb83-09d4-4f10-a382-7828e4838ec0",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "f5afdf99-ce30-4f2f-ac9a-5d27a3aab5be"
+            "d9612b13-4a5f-499a-8028-712437cd2fca"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 304,
+          "duration": 284,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
