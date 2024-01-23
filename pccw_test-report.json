@@ -5,9 +5,9 @@
     "passes": 3,
     "pending": 0,
     "failures": 0,
-    "start": "2024-01-23T08:17:15.152Z",
-    "end": "2024-01-23T08:17:21.033Z",
-    "duration": 5881,
+    "start": "2024-01-23T08:55:32.152Z",
+    "end": "2024-01-23T08:55:38.311Z",
+    "duration": 6159,
     "testsRegistered": 3,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "1c8f3f79-6c44-4901-878e-29669d7bd21b",
+      "uuid": "aa65c000-ee9e-4d46-832f-141191638625",
       "title": "",
       "fullFile": "cypress/e2e/pccw_test.cy.js",
       "file": "cypress/e2e/pccw_test.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "b80ebd37-004e-4906-bc4e-5c60d7136f7d",
+          "uuid": "ada5a3cb-10a4-44ef-a098-da86f5a4f82d",
           "title": "Login Page Test",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Happy Ending to Successful Login page",
               "fullTitle": "Login Page Test Happy Ending to Successful Login page",
               "timedOut": null,
-              "duration": 4035,
+              "duration": 4296,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -47,8 +47,8 @@
               "context": null,
               "code": "cy.get(\"@testData\").then(data => {\n  _loginPage.default.fillUsername(data.loginGood.name);\n  _loginPage.default.fillPassword(data.loginGood.pwd);\n  _loginPage.default.submit();\n  cy.checkSuccessfulLogin(data.loginGood.name);\n});\ncy.log(\"Well done! See you next time!\");",
               "err": {},
-              "uuid": "ac373426-48dd-4495-b5dc-0862dac2e885",
-              "parentUUID": "b80ebd37-004e-4906-bc4e-5c60d7136f7d",
+              "uuid": "7503de28-7b9e-4364-8bd5-97e918c92630",
+              "parentUUID": "ada5a3cb-10a4-44ef-a098-da86f5a4f82d",
               "isHook": false,
               "skipped": false
             },
@@ -56,7 +56,7 @@
               "title": "Negative - bad user name",
               "fullTitle": "Login Page Test Negative - bad user name",
               "timedOut": null,
-              "duration": 924,
+              "duration": 1017,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -65,8 +65,8 @@
               "context": null,
               "code": "cy.get(\"@testData\").then(data => {\n  _loginPage.default.fillUsername(data.loginBadName.name);\n  _loginPage.default.fillPassword(data.loginBadName.pwd);\n  _loginPage.default.submit();\n  _loginPage.default.checkInvalidUsernameError();\n});\ncy.log(\"Well done! See you next time!\");",
               "err": {},
-              "uuid": "abee2dea-2a61-4228-804f-a3f1f36ec01d",
-              "parentUUID": "b80ebd37-004e-4906-bc4e-5c60d7136f7d",
+              "uuid": "18894c08-d630-4e12-b458-7be8a0db356b",
+              "parentUUID": "ada5a3cb-10a4-44ef-a098-da86f5a4f82d",
               "isHook": false,
               "skipped": false
             },
@@ -74,7 +74,7 @@
               "title": "Negative - bad user password",
               "fullTitle": "Login Page Test Negative - bad user password",
               "timedOut": null,
-              "duration": 881,
+              "duration": 807,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -83,22 +83,22 @@
               "context": null,
               "code": "cy.get(\"@testData\").then(data => {\n  _loginPage.default.fillUsername(data.loginBadPwd.name);\n  _loginPage.default.fillPassword(data.loginBadPwd.pwd);\n  _loginPage.default.submit();\n  _loginPage.default.checkInvalidPasswordError();\n  // cy.expect(1).to.equal(0)\n});\ncy.log(\"Well done! See you next time!\");",
               "err": {},
-              "uuid": "38c344fb-29c4-4663-81ef-f24b0de3730b",
-              "parentUUID": "b80ebd37-004e-4906-bc4e-5c60d7136f7d",
+              "uuid": "9c39450b-d57a-4657-9d83-b214972c70fb",
+              "parentUUID": "ada5a3cb-10a4-44ef-a098-da86f5a4f82d",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "ac373426-48dd-4495-b5dc-0862dac2e885",
-            "abee2dea-2a61-4228-804f-a3f1f36ec01d",
-            "38c344fb-29c4-4663-81ef-f24b0de3730b"
+            "7503de28-7b9e-4364-8bd5-97e918c92630",
+            "18894c08-d630-4e12-b458-7be8a0db356b",
+            "9c39450b-d57a-4657-9d83-b214972c70fb"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 5840,
+          "duration": 6120,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
