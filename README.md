@@ -4,12 +4,13 @@
 
 ## Usage
 ```
-git clone https://github.com/hollemeng/login_test.git
-cd login_test
+git clone https://github.com/hollemeng/login-test.git
+cd login-test
 npm i
 npm run cypress:justGO
 ```
-## The report from last run is hosted in Github page: [https://hollemeng.github.io/login-test/](https://hollemeng.github.io/login-test/)
+## The report from last run is hosted in Github page: 
+[https://hollemeng.github.io/login-test/](https://hollemeng.github.io/login-test/)
 
 ## Others
 ### [CI Workflow]() examples
