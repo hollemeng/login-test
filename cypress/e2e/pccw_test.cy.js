@@ -1,5 +1,7 @@
 import { it } from "mocha";
 import loginPage from "../pages/login-page";
+import { LoginPageThis } from "../pages/login-page";
+import { LoginPageThisOption } from "../pages/login-page";
 
 describe("Login Page Test", function () {
   this.beforeEach(() => {
@@ -46,6 +48,39 @@ describe("Login Page Test", function () {
       // cy.expect(1).to.equal(0)
     });
 
+    cy.log("Well done! See you next time!");
+  });
+
+  it("Happy Ending to Successful Login page - ThisOption", function () {
+    const loginPageOptions = {
+      baseURL: '/practice-test-login',
+      usernameSelector: '#username',
+      passwordSelector: '#password',
+      submitButtonSelector: '#submit',
+      errorSelector: '#error'
+  };
+    cy.get("@testData").then((data) => {
+      const loginPageThisOp = new LoginPageThisOption(loginPageOptions);
+
+      loginPageThisOp.fillUsername(data.loginGood.name);
+      loginPageThisOp.fillPassword(data.loginGood.pwd);
+      loginPageThisOp.submit();
+
+      cy.checkSuccessfulLogin(data.loginGood.name);
+    });
+    cy.log("Well done! See you next time!");
+  });
+
+  it("Happy Ending to Successful Login page - This", function () {
+    cy.get("@testData").then((data) => {
+      const loginPageThis = new LoginPageThis();
+
+      loginPageThis.fillUsername(data.loginGood.name);
+      loginPageThis.fillPassword(data.loginGood.pwd);
+      loginPageThis.submit();
+
+      cy.checkSuccessfulLogin(data.loginGood.name);
+    });
     cy.log("Well done! See you next time!");
   });
 });
